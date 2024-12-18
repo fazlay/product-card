@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Optional: Custom Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            // Add custom theme extensions here
+          },
+        },
+      };
+    </script>
+    <!-- Optional: Custom CSS -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        /* Add custom utility classes here */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div
+      class="flex flex-col justify-center px-12 pt-32 max-md:px-5 max-md:pt-24"
+    >
+      <div
+        class="flex gap-10 items-center w-full min-h-[720px] max-md:max-w-full"
+      >
+        <div
+          class="flex overflow-hidden flex-col self-stretch my-auto bg-orange-400 rounded min-w-[240px] w-[630px] max-md:max-w-full"
+        >
+          <img
+            loading="lazy"
+            id="product_image"
+            src="/assets/violate.png"
+            alt="Classy Modern Smart Watch - Product Image"
+            class="object-contain w-full aspect-[0.87] max-md:max-w-full"
+          />
+        </div>
+        <div
+          class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 min-w-[240px] max-md:max-w-full"
+        >
+          <div class="flex flex-col w-full max-md:max-w-full">
+            <h1
+              class="self-start py-3 text-4xl font-bold tracking-tighter leading-none text-slate-700 max-md:max-w-full"
+            >
+              Classy Modern Smart watch
+            </h1>
+            <div
+              class="flex flex-wrap gap-2 items-center pr-1 pb-1 w-full max-md:max-w-full"
+            >
+              <div
+                class="flex gap-1.5 items-start self-stretch my-auto"
+                role="group"
+                aria-label="Product rating"
+              >
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5ecbb8ea9737afdf399850637d03c4bf0a805f450cdbc17044554e77dfce7c4?placeholderIfAbsent=true&apiKey=511d13bc88154ab18bcf15c21c09a7f0"
+                  alt=""
+                  class="object-contain shrink-0 aspect-square w-[18px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2559a0bf8bf35a3358db353cb168cb5beea5b929c2edfcf60eabb74a67010a4?placeholderIfAbsent=true&apiKey=511d13bc88154ab18bcf15c21c09a7f0"
+                  alt=""
+                  class="object-contain shrink-0 aspect-square w-[18px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/f5ecbb8ea9737afdf399850637d03c4bf0a805f450cdbc17044554e77dfce7c4?placeholderIfAbsent=true&apiKey=511d13bc88154ab18bcf15c21c09a7f0"
+                  alt=""
+                  class="object-contain shrink-0 aspect-square w-[18px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/5aac9add96d2988002ce6ea36edfeea09b926c658a6ec29f4effd33f085fead3?placeholderIfAbsent=true&apiKey=511d13bc88154ab18bcf15c21c09a7f0"
+                  alt=""
+                  class="object-contain shrink-0 aspect-square w-[18px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/a0a136eb4ec071ac4f0e0c4f7af7d73a2abf2f11d77b3ef26db18dc842a0af9d?placeholderIfAbsent=true&apiKey=511d13bc88154ab18bcf15c21c09a7f0"
+                  alt=""
+                  class="object-contain shrink-0 aspect-square w-[18px]"
+                />
+              </div>
+              <div
+                class="self-stretch my-auto text-sm leading-6 text-slate-400"
+              >
+                (2 Reviews)
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap gap-1.5 items-end pt-5 w-full whitespace-nowrap max-md:max-w-full"
+            >
+              <div class="text-xl text-slate-400" aria-label="Original price">
+                $99.00
+              </div>
+              <div
+                class="text-2xl font-bold leading-none text-indigo-500"
+                aria-label="Sale price"
+              >
+                $79.00
+              </div>
+            </div>
+            <div
+              class="flex-1 shrink gap-2 self-stretch pt-5 pr-1 w-full text-lg leading-8 text-slate-400 max-md:max-w-full"
+            >
+              I must explain to you how all this mistaken idea of denoun cing
+              ple praising pain was born and I will give you a complete account
+              of the system, and expound the actual teaching.
+            </div>
+            <div
+              class="flex flex-wrap gap-10 items-center pt-5 pr-1 w-full max-md:max-w-full"
+            >
+              <div class="flex flex-col self-stretch my-auto whitespace-nowrap">
+                <div class="text-sm leading-6 text-slate-400">Type</div>
+                <div class="text-base font-bold leading-none text-slate-700">
+                  Watch
+                </div>
+              </div>
+              <div class="flex flex-col self-stretch my-auto">
+                <div class="text-sm leading-6 text-slate-400">Model Number</div>
+                <div class="text-base font-bold leading-none text-slate-700">
+                  Forerunner 290XT
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col pt-5 w-full max-md:max-w-full">
+              <div class="text-lg font-bold leading-none text-slate-700">
+                Band Color
+              </div>
+              <div
+                class="flex gap-5 items-center self-start mt-2.5"
+                role="radiogroup"
+                aria-label="Select band color"
+              >
+                <input
+                  class="appearance-none w-5 h-5 rounded-full bg-violet-500 relative before:content-[''] before:absolute before:-inset-1 before:border-2 before:border-violet-500 before:rounded-full before:opacity-0 checked:before:opacity-100"
+                  type="radio"
+                  id="violate"
+                  name="brand_color"
+                  value="violate"
+                />
+                <input
+                  class="appearance-none w-5 h-5 rounded-full bg-cyan-500 relative before:content-[''] before:absolute before:-inset-1 before:border-2 before:border-cyan-500 before:rounded-full before:opacity-0 checked:before:opacity-100"
+                  type="radio"
+                  id="cyan"
+                  name="brand_color"
+                  value="cyan"
+                />
+                <input
+                  class="appearance-none w-5 h-5 rounded-full bg-blue-500 relative before:content-[''] before:absolute before:-inset-1 before:border-2 before:border-blue-500 before:rounded-full before:opacity-0 checked:before:opacity-100"
+                  type="radio"
+                  id="blue"
+                  name="brand_color"
+                  value="blue"
+                />
+                <input
+                  class="appearance-none w-5 h-5 rounded-full bg-black relative before:content-[''] before:absolute before:-inset-1 before:border-2 before:border-black before:rounded-full before:opacity-0 checked:before:opacity-100"
+                  type="radio"
+                  id="black"
+                  name="brand_color"
+                  value="black"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col pt-5 w-full font-bold max-md:max-w-full">
+              <div class="text-lg leading-none text-slate-700">Wrist Size</div>
+              <div
+                class="flex gap-3 items-center self-start mt-2.5 text-sm tracking-wide leading-loose text-slate-400"
+                role="radiogroup"
+                aria-label="Select wrist size"
+              >
+                <label class="inline-flex">
+                  <input
+                    type="radio"
+                    name="size"
+                    value="small"
+                    class="hidden peer"
+                    aria-label="Small size, $69"
+                  />
+                  <span
+                    class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto rounded border border-slate-300 border-solid text-slate-400 peer-checked:border-indigo-500 peer-checked:text-indigo-500 flex items-center space-x-2.5 cursor-pointer"
+                  >
+                    <span class="text-sm text-inherit">S</span>
+                    <span
+                      class="text-xs text-slate-400 peer-checked:text-slate-400"
+                      >$69</span
+                    >
+                  </span>
+                </label>
+                <label class="inline-flex">
+                  <input
+                    type="radio"
+                    name="size"
+                    value="medium"
+                    class="hidden peer"
+                    aria-label="Medium size, $69"
+                  />
+                  <span
+                    class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto rounded border border-slate-300 border-solid text-slate-400 peer-checked:border-indigo-500 peer-checked:text-indigo-500 flex items-center space-x-2.5 cursor-pointer"
+                  >
+                    <span class="text-sm text-inherit">M</span>
+                    <span
+                      class="text-xs text-slate-400 peer-checked:text-slate-400"
+                      >$79</span
+                    >
+                  </span>
+                </label>
+                <label class="inline-flex">
+                  <input
+                    type="radio"
+                    name="size"
+                    value="large"
+                    class="hidden peer"
+                    aria-label="Large size, $69"
+                  />
+                  <span
+                    class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto rounded border border-slate-300 border-solid text-slate-400 peer-checked:border-indigo-500 peer-checked:text-indigo-500 flex items-center space-x-2.5 cursor-pointer"
+                  >
+                    <span class="text-sm text-inherit">L</span>
+                    <span
+                      class="text-xs text-slate-400 peer-checked:text-slate-400"
+                      >$89</span
+                    >
+                  </span>
+                </label>
+                <label class="inline-flex">
+                  <input
+                    type="radio"
+                    name="size"
+                    value="extra_large"
+                    class="hidden peer"
+                    aria-label="Extra Large size, $69"
+                  />
+                  <span
+                    class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto rounded border border-slate-300 border-solid text-slate-400 peer-checked:border-indigo-500 peer-checked:text-indigo-500 flex items-center space-x-2.5 cursor-pointer"
+                  >
+                    <span class="text-sm text-inherit">XL</span>
+                    <span
+                      class="text-xs text-slate-400 peer-checked:text-slate-400"
+                      >$99</span
+                    >
+                  </span>
+                </label>
+              </div>
+            </div>
+            <form
+              class="flex flex-wrap gap-3 items-center pt-5 w-full max-md:max-w-full"
+            >
+              <div
+                class="flex overflow-hidden self-stretch my-auto text-lg leading-none whitespace-nowrap rounded border border-solid border-zinc-200 min-h-[36px] text-slate-400"
+              >
+                <button
+                  type="button"
+                  id="decreaseBtn"
+                  aria-label="Decrease quantity"
+                  class="px-2 py-1 border border-solid border-zinc-200"
+                >
+                  -
+                </button>
+                <input
+                  id="quantityInput"
+                  type="number"
+                  value="0"
+                  min="0"
+                  aria-label="Product quantity"
+                  class="px-15 py-1 text-sm leading-6 border border-solid border-zinc-200 text-slate-700 max-md:px-5 w-16 text-center"
+                />
+                <button
+                  type="button"
+                  id="increaseBtn"
+                  aria-label="Increase quantity"
+                  class="px-2 py-1 border border-solid border-zinc-200"
+                >
+                  +
+                </button>
+              </div>
+              <button
+                id="addToCartBtn"
+                type="button"
+                class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto text-sm font-bold tracking-wide leading-loose text-white bg-indigo-500 rounded"
+              >
+                Add to Cart
+              </button>
+              <button
+                type="button"
+                aria-label="Add to wishlist"
+                class="self-stretch px-px py-0.5 my-auto w-5 text-xl leading-none text-center text-indigo-500 whitespace-nowrap"
+              >
+                ♡
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex gap-3 justify-center items-center py-5 mt-24 w-full font-bold tracking-wide whitespace-nowrap text-slate-700 max-md:mt-10 max-md:max-w-full"
+      >
+        <button
+          id="checkoutBtn"
+          class="hidden overflow-hidden gap-2.5 justify-center items-center self-stretch px-6 py-3 my-auto bg-orange-300 rounded-3xl shadow-sm min-h-[42px] max-md:px-5"
+        >
+          <span class="self-stretch my-auto text-sm leading-none"
+            >Checkout</span
+          >
+          <span
+            id="cartCount"
+            class="gap-2 self-stretch px-1.5 py-0.5 my-auto text-xs leading-none bg-white rounded-md"
+            >0</span
+          >
+        </button>
+      </div>
+    </div>
+    <div
+      id="cartModal"
+      class="hidden flex-col bg-white"
+      role="modal"
+      aria-label="Product Details Section"
+    >
+      <div
+        class="flex overflow-hidden absolute right-0 top-0 z-0 flex-col justify-center items-center font-bold leading-6 bg-neutral-900 bg-opacity-60 h-[974px] min-h-[974px] w-full max-md:px-5 max-md:py-24 max-md:max-w-full"
+        role="dialog"
+        aria-label="Shopping Cart"
+      >
+        <div
+          class="flex flex-col p-11 max-w-full bg-white rounded-3xl w-[651px] max-md:px-5"
+        >
+          <div
+            class="flex gap-2.5 items-center self-start text-2xl leading-none text-slate-700"
+          >
+            <h2>Your Cart</h2>
+          </div>
+          <div
+            class="flex flex-wrap items-center pt-1 pr-1 pb-2 mt-4 w-full text-sm border-b border-zinc-200 text-slate-400 max-md:max-w-full"
+          >
+            <div class="grow shrink self-stretch my-auto w-[266px]">Item</div>
+            <div class="grow shrink self-stretch my-auto text-center w-[50px]">
+              Color
+            </div>
+            <div class="grow shrink self-stretch my-auto text-center w-[57px]">
+              Size
+            </div>
+            <div class="grow shrink self-stretch my-auto text-center w-[47px]">
+              Qnt
+            </div>
+            <div class="grow shrink self-stretch my-auto text-right w-[79px]">
+              Price
+            </div>
+          </div>
+          <ul
+            class="flex flex-wrap items-center pr-1 pb-4 mt-4 w-full text-sm border-b border-zinc-200 text-slate-700 max-md:max-w-full"
+            id="cartItem"
+          ></ul>
+
+          <div
+            class="flex flex-wrap gap-10 justify-between items-end mt-4 w-full tracking-normal leading-9 whitespace-nowrap text-slate-700 max-md:max-w-full"
+          >
+            <div class="text-base leading-none text-neutral-700 w-[379px]">
+              Total
+            </div>
+            <div class="text-sm">4</div>
+            <div class="text-lg">$356.00</div>
+          </div>
+          <div
+            class="flex justify-between items-end pt-2.5 mt-4 w-full text-sm tracking-wide leading-loose max-md:max-w-full"
+          >
+            <div
+              class="flex flex-wrap flex-1 shrink gap-6 items-center w-full basis-0 min-w-[240px] max-md:max-w-full"
+            >
+              <button
+                type="button"
+                class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto rounded border border-solid border-zinc-200 text-slate-700"
+              >
+                Continue Shopping
+              </button>
+              <button
+                type="button"
+                class="overflow-hidden gap-2.5 self-stretch px-5 py-2 my-auto text-white whitespace-nowrap bg-indigo-500 rounded"
+              >
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
