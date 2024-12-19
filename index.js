@@ -2,26 +2,26 @@ const radioColorButtons = document.querySelectorAll(
   'input[name="brand_color"]'
 );
 const radioSizeButtons = document.querySelectorAll('input[name="size"]');
-const productImage = document.querySelector('img[id="product_image"]'); // Select the image
+const productImage = document.querySelector('img[id="product_image"]');
 let selectedSize = "";
 const cart = [];
 const decreaseBtn = document.getElementById("decreaseBtn");
 const increaseBtn = document.getElementById("increaseBtn");
 const quantityInput = document.getElementById("quantityInput");
 const checkoutBtn = document.getElementById("checkoutBtn");
-const cartCountElement = document.getElementById("cartCount"); // Select the cart count element
+const cartCountElement = document.getElementById("cartCount");
 const cartModal = document.getElementById("cartModal");
 function initializePage() {
   console.log("Page loaded");
 }
 document.addEventListener("DOMContentLoaded", initializePage);
-//check the radio button input
+
 function checkColorInput() {
   radioColorButtons.forEach((radioButton) => {
     radioButton.addEventListener("change", (event) => {
       const selectedColor = event.target.value;
-      // Update the image source based on the selected color
-      productImage.src = `/assets/${selectedColor}.png`; // Assuming the image filenames match the values
+
+      productImage.src = `/assets/${selectedColor}.png`;
       console.log(selectedColor);
     });
   });
@@ -36,42 +36,40 @@ function checkSizeInput() {
   });
 }
 checkSizeInput();
-// Counter Functions
+
 decreaseBtn.addEventListener("click", () => {
-  let currentValue = parseInt(quantityInput.value, 10) || 0; // Ensure it's a number
+  let currentValue = parseInt(quantityInput.value, 10) || 0;
   if (currentValue > 0) {
     quantityInput.value = currentValue - 1;
   }
 });
 
 increaseBtn.addEventListener("click", () => {
-  let currentValue = parseInt(quantityInput.value, 10) || 0; // Ensure it's a number
+  let currentValue = parseInt(quantityInput.value, 10) || 0;
   quantityInput.value = currentValue + 1;
 });
 
-// add to CART
 const addToCartBtn = document.getElementById("addToCartBtn");
 addToCartBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const selectedColor = Array.from(radioColorButtons).find(
     (radio) => radio.checked
-  )?.value; // Get selected color
-  const quantity = parseInt(quantityInput.value, 10) || 0; // Get quantity
+  )?.value;
+  const quantity = parseInt(quantityInput.value, 10) || 0;
 
   if (selectedColor && quantity > 0) {
-    // Check if color is selected and quantity is greater than 0
-    const cartItem = { color: selectedColor, quantity: quantity }; // Create cart item object
-    cart.push(cartItem); // Add item to cart
-    // Update the cart count display
+    const cartItem = { color: selectedColor, quantity: quantity };
+    cart.push(cartItem);
+
     cartCountElement.textContent = cart.length;
     if (cart.length > 0) {
-      checkoutBtn.classList.remove("hidden"); // Show the button
+      checkoutBtn.classList.remove("hidden");
     }
-    // Reset quantity input and color selection
-    quantityInput.value = 0; // Reset quantity
-    radioColorButtons.forEach((radio) => (radio.checked = false)); // Reset color selection
+
+    quantityInput.value = 0;
+    radioColorButtons.forEach((radio) => (radio.checked = false));
   } else {
-    alert("Please select a color and quantity greater than 0."); // Error message
+    alert("Please select a color and quantity greater than 0.");
   }
 });
 
@@ -116,5 +114,3 @@ function addCartElements(cart) {
     cartList.innerHTML += listItem;
   });
 }
-
-//make an array with all the products
